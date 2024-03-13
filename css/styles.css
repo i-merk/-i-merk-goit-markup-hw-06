@@ -62,7 +62,7 @@ ul, ol {list-style: none;
     text-transform: uppercase;
     display: flex;
     cursor: pointer;
-    padding: 17px 0;
+    padding: 25px 0;
 }
 
     .h-logo_one {color: var(--IRIS, #2E2F42
@@ -138,14 +138,16 @@ ul, ol {list-style: none;
             width: 100%;
             position: absolute; 
             left: 0; 
-            bottom: -1px;
+            bottom: -2px;
             height: 4px; 
             background-color: #404bbf; 
             border-radius: 2px; 
     
         }
                 
-    .address {display: block;}
+    .address {display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;}
                 
     .contact:hover { color: #404bbf;}
     .contact:focus { color: #404bbf;}
@@ -163,7 +165,7 @@ ul, ol {list-style: none;
     .address-list {
         display: flex;
         flex-direction: column;
-        gap:12px; }
+       }
     }   
     
 @media screen and (min-width: 1158px) {
@@ -173,10 +175,12 @@ ul, ol {list-style: none;
         flex-direction: row;
         gap:40px; }
         .contact {font-size: 16px;
-        line-height:1,5;}
+        line-height:1.5;}
 /*------mob-menu-------*/
 }
 .mob-menu {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     background-color:#fff;
@@ -186,9 +190,20 @@ ul, ol {list-style: none;
     overflow: auto;
 }
 .mob-menu-close-btn {
-    display: block;
-    margin-left: auto;
-    margin-bottom: 24px;
+    
+    position: absolute; 
+    right: 24px;
+    width: 24px; 
+    height: 24px; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-color: #e7e9fc; 
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    padding: 0; 
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
    
 }
 .mob-menu-list {
@@ -228,11 +243,10 @@ letter-spacing: 0.02em;
 .m-contact:hover{color: #4d5ae5;}
 .m-contact:focus{ color: #4d5ae5;}   
 
-.mob-menu-close-btn {
-    display: block;
-    margin-left: auto;
-    margin-bottom: 24px;
+.address-sm-mob-menu { margin-top: auto;
+
 }
+
 @media screen and (min-width: 768px){.mob-menu {display: none;}}
 
 
@@ -988,7 +1002,6 @@ button:hover{ background: #404bbf;}
 .m-window .user-privacy:focus + .form-svg {
     fill: #4d5ae5;
 }
-.p-svg{ position: left;}
 
 .user-privacy:checked + label span {
 	background-color:  #404bbf;
