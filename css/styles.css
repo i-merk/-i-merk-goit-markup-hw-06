@@ -192,7 +192,7 @@ ul, ol {list-style: none;
     padding:24px 24px 40px 16px;
     overflow: auto;
 }
-.open-menu-btn.is-open + .mob-menu {
+.open-menu-btn+.is-open:checked .mob-menu {
     display: flex; 
 }
 .mob-menu-close-btn {
