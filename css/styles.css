@@ -192,9 +192,15 @@ ul, ol {list-style: none;
     padding:24px 24px 40px 16px;
     overflow: auto;
 }
-.open-menu-btn:checked .mob-menu {
-    display: flex; 
+.menu-toggle {
+    display: none; /* Скрыть сам чекбокс */
 }
+.menu-toggle:checked ~ .mob-menu {
+    display: flex; /* Показать меню, если чекбокс отмечен */
+}
+/*.open-menu-btn:checked ~ .mob-menu {
+    display: flex; 
+}*/
 .mob-menu-close-btn {
     
     position: absolute; 
