@@ -81,8 +81,12 @@ ul, ol {list-style: none;
     cursor: pointer;
     line-height: 0;
     border: none;
-    transition: all 0.3s ease; 
-}
+    transition: all 0.3s ease; }
+   
+    .open-menu-btn.is-open {opacity: 1; 
+        pointer-events: auto; 
+        visibility: visible;}
+
 .header-menu-list {
     display: none; 
    }
@@ -191,16 +195,15 @@ ul, ol {list-style: none;
     height: 100vh;
     padding:24px 24px 40px 16px;
     overflow: auto;
+    opacity: 0; 
+    visibility: hidden; 
+    pointer-events: none; 
+
 }
-.menu-toggle {
-    display: none; /* Скрыть сам чекбокс */
-}
-.menu-toggle:checked ~ .mob-menu {
-    display: flex; /* Показать меню, если чекбокс отмечен */
-}
-/*.open-menu-btn:checked ~ .mob-menu {
-    display: flex; 
-}*/
+.backdrop.is-open {opacity: 1; 
+    pointer-events: auto; 
+    visibility: visible;}
+
 .mob-menu-close-btn {
     
     position: absolute; 
