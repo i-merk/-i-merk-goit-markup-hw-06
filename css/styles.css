@@ -83,7 +83,7 @@ ul, ol {list-style: none;
     border: none;
     transition: all 0.3s ease; }
    
-    .open-menu-btn.is-open {opacity: 1; 
+    .is-open {opacity: 1; 
         pointer-events: auto; 
         visibility: visible;}
 
@@ -882,7 +882,7 @@ margin-bottom: 0;}
     visibility: hidden; 
     pointer-events: none; 
 }
-.backdrop.is-open {opacity: 1; 
+.fm-window.is-open {opacity: 1; 
     pointer-events: auto; 
     visibility: visible;}
 .m-window{position: absolute;
